@@ -8,7 +8,7 @@
 - [Contributing](#contributing)
 
 ## Installation
-The website should now be accessible at https://7rajnishsharma.github.io/Docsy/
+The website should now be accessible at (https://7rajnishsharma.github.io/Doscy/)
 
 ## Usage
 
