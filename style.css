@@ -214,6 +214,7 @@ html {
   background: var(--primary);
   text-align: center;
   padding: 30px 20px;
+  margin: auto;
 }
 
 .container .box-container .box img {
@@ -816,13 +817,25 @@ p {
   }
 
   section {
-    padding: 4rem 1.5rem 4rem 1.5rem;
+    padding: 3rem 1.5rem 3rem 1.5rem;
   }
 
   .home .home-content {
     padding-top: 12rem;
     color: black;
     width: 100%;
+  }
+
+  .container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+  }
+
+  .blog-container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
   }
 
   #myBtn {
