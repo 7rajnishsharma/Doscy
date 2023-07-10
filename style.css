@@ -24,7 +24,6 @@ html {
 
 
 section {
-  background: #c8c8c8;
   padding: 3.8rem 5% 0 5%;
   background: #9d9fcf;
 }
@@ -48,17 +47,16 @@ html {
   font-weight: bolder;
   border: none;
   outline: none;
-  background: #3455eb;
+  background-image: linear-gradient(to bottom, #ff6e7f, #bfe9ff);
   color: white;
   cursor: pointer;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 4px;
   z-index: 1000000;
-  opacity: .6;
 }
 
 #myBtn:hover {
-  opacity: 1;
+  background-color: #555;
 }
 
 .heading {
@@ -117,44 +115,45 @@ html {
 
 #menu-btn {
   display: none;
-  color: #fff;
 }
+
+
 
 
 /* =============================================================== */
 /* Home  */
 
 .home {
-  background: url('assets/bg.jpg');
+  background: url('assets/back.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 
 
+
 .home .home-content {
-  color: #fff;
+  padding-top: 13rem;
+  color: black;
+  width: 50vw;
 }
 
 .home .home-content h1 {
   text-align: center;
+  padding-bottom: 15px;
   text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  line-height: 6rem;
 }
 
 .home .home-content p {
   padding-top: 4rem;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 2rem;
   text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
   font-weight: 600;
-  line-height: 4rem;
 }
 
 
@@ -185,6 +184,8 @@ html {
   line-height: 2.5rem;
   text-align: left;
 }
+
+
 
 
 /* =============================================================== */
@@ -315,6 +316,9 @@ html {
   box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
   transform: scale(1.03);
 }
+
+
+
 
 /* =============================================================== */
 /* our team */
@@ -678,6 +682,20 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 991px) {
   html {
     font-size: 56.25%;
@@ -707,8 +725,9 @@ p {
     position: absolute;
     top: 100%;
     right: -100%;
-    background: #00000099;
+    background: var(--primary);
     width: 30rem;
+    height: calc(100vh - 9.5rem);
   }
 
   .header .navbar.active {
@@ -716,7 +735,7 @@ p {
   }
 
   .header .navbar a {
-    color: #ffffff;
+    color: black;
     display: block;
     margin: 1.5rem;
     padding: .5rem;
@@ -736,6 +755,11 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
   }
+
+
+
+
+
 
   .contact-container {
     margin: 40px 0;
@@ -780,6 +804,9 @@ p {
     margin-left: 0;
   }
 
+
+
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -790,6 +817,12 @@ p {
 
   section {
     padding: 4rem 1.5rem 4rem 1.5rem;
+  }
+
+  .home .home-content {
+    padding-top: 12rem;
+    color: black;
+    width: 100%;
   }
 
   #myBtn {
